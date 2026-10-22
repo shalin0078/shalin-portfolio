@@ -49,6 +49,8 @@ data.certificates.forEach((certificate) => {
     const image = document.createElement('img');
     image.src = certificate.image;
     image.alt = certificate.description || certificate.title;
+    image.loading = 'lazy';
+    image.decoding = 'async';
     preview.append(image);
     openButton.append(preview);
   } else {
@@ -125,7 +127,7 @@ if (year) year.textContent = String(new Date().getFullYear());
 // Reveal content as it enters the viewport.
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const revealTargets = document.querySelectorAll(
-    '.about-section, .project-card, .timeline article, .skill-grid article, .certificate-card, .milestone-row, .update-card, .contact-inner'
+    '.about-section, .project-card, .timeline article, .skill-grid article, .certificate-card, .milestone-row, .update-card, .answer-grid article, .contact-inner'
   );
   const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
