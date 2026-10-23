@@ -58,15 +58,6 @@ window.PORTFOLIO_CONTENT = {
       sourceUrl: "https://www.linkedin.com/in/shalin-rathod-301400305/"
     },
     {
-      title: "Vadodara Startup Festival 6.0 · Pre-Incubation Program",
-      issuer: "PIERC · Parul University · SSIP",
-      date: "",
-      kind: "Certificate of Achievement",
-      image: "assets/vadodara-preincubation-photo.png",
-      description: "This certificate is from Vadodara Startup Festival 6.0 at Parul University. It recognises Shalin’s achievement at the festival and selection for the pre-incubation programme through PIERC. The experience helped start Philoi Industries’ journey in the university’s incubation ecosystem.",
-      sourceUrl: "https://www.linkedin.com/in/shalin-rathod-301400305/"
-    },
-    {
       title: "Vadodara Hackathon 6.0 · Top 45 Team Selection",
       issuer: "PIERC · Parul University",
       date: "2–4 & 13 September 2025",

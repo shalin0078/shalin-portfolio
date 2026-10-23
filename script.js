@@ -116,6 +116,19 @@ data.updates.forEach((update) => {
   updatesList?.append(card);
 });
 
+// Turn compact skill lists into readable, scannable technology chips.
+document.querySelectorAll('.skill-grid article p').forEach((list) => {
+  const skills = list.textContent.split(' · ').map((skill) => skill.trim()).filter(Boolean);
+  if (skills.length < 2) return;
+  list.classList.add('skill-tags');
+  list.replaceChildren(...skills.map((skill) => {
+    const tag = document.createElement('span');
+    tag.className = 'skill-tag';
+    tag.textContent = skill;
+    return tag;
+  }));
+});
+
 dialog?.querySelector('.dialog-close')?.addEventListener('click', () => dialog.close());
 dialog?.addEventListener('click', (event) => {
   if (event.target === dialog) dialog.close();
