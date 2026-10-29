@@ -13,6 +13,128 @@ siteNav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', 
 }));
 
 const data = window.PORTFOLIO_CONTENT ?? { certificates: [], updates: [] };
+const projectGrid = document.querySelector('#project-grid');
+
+function renderProjects(filter = 'all') {
+  if (!projectGrid) return;
+  const projects = (data.projects ?? []).filter((project) => filter === 'all' || project.filter === filter);
+  projectGrid.replaceChildren();
+
+  projects.forEach((project) => {
+    const card = document.createElement('details');
+    card.className = `project-card project-case${project.number === '03' ? ' project-cyber' : ''}`;
+    card.dataset.filter = project.filter;
+
+    const summary = document.createElement('summary');
+    summary.className = 'project-summary';
+    if (project.visual) {
+      const media = document.createElement('figure');
+      media.className = 'project-media';
+      const image = document.createElement('img');
+      image.src = project.visual;
+      image.alt = project.visualAlt || `${project.title} visual`;
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      image.width = 960;
+      image.height = 540;
+      const visualLabel = document.createElement('figcaption');
+      visualLabel.textContent = project.visualLabel || 'Project visual';
+      media.append(image, visualLabel);
+      summary.append(media);
+    }
+    const top = document.createElement('span');
+    top.className = 'project-top';
+    const category = document.createElement('span');
+    category.textContent = project.category;
+    const number = document.createElement('span');
+    number.textContent = project.number;
+    top.append(category, number);
+
+    const title = document.createElement('h3');
+    title.textContent = project.title;
+    const intro = document.createElement('p');
+    intro.className = 'project-summary-copy';
+    intro.textContent = project.summary;
+    const cue = document.createElement('span');
+    cue.className = 'project-expand-cue';
+    cue.textContent = 'Explore case study';
+    summary.append(top, title, intro, cue);
+
+    const body = document.createElement('div');
+    body.className = 'project-case-body';
+    if (project.credit) {
+      const credit = document.createElement('p');
+      credit.className = 'project-credit';
+      credit.textContent = project.credit;
+      body.append(credit);
+    }
+    const facts = [
+      ['The challenge', project.challenge],
+      ['What I built', project.approach],
+      ['Focus', project.focus]
+    ];
+    facts.forEach(([label, value]) => {
+      const block = document.createElement('div');
+      block.className = 'project-fact';
+      const heading = document.createElement('h4');
+      heading.textContent = label;
+      const copy = document.createElement('p');
+      copy.textContent = value;
+      block.append(heading, copy);
+      body.append(block);
+    });
+
+    if (project.stack?.length) {
+      const tech = document.createElement('div');
+      tech.className = 'project-tech';
+      const label = document.createElement('span');
+      label.className = 'project-tech-label';
+      label.textContent = 'TECH';
+      const tags = document.createElement('div');
+      tags.className = 'project-tech-tags';
+      project.stack.forEach((item) => {
+        const tag = document.createElement('span');
+        tag.textContent = item;
+        tags.append(tag);
+      });
+      tech.append(label, tags);
+      body.append(tech);
+    }
+
+    const status = document.createElement('p');
+    status.className = 'project-status';
+    status.textContent = project.status;
+    body.append(status);
+    if (project.note) {
+      const note = document.createElement('p');
+      note.className = 'project-caveat';
+      note.textContent = project.note;
+      body.append(note);
+    }
+    if (project.links?.length) {
+      const links = document.createElement('div');
+      links.className = 'project-links';
+      project.links.forEach(({ label, url }) => links.append(makeLink(label, url)));
+      body.append(links);
+    }
+
+    card.append(summary, body);
+    projectGrid.append(card);
+  });
+}
+
+renderProjects();
+document.querySelectorAll('[data-project-filter]').forEach((button) => {
+  button.addEventListener('click', () => {
+    document.querySelectorAll('[data-project-filter]').forEach((item) => {
+      const active = item === button;
+      item.classList.toggle('is-active', active);
+      item.setAttribute('aria-pressed', String(active));
+    });
+    renderProjects(button.dataset.projectFilter);
+  });
+});
+
 const certificateGrid = document.querySelector('#certificate-grid');
 const updatesList = document.querySelector('#updates-list');
 const dialog = document.querySelector('#certificate-dialog');
