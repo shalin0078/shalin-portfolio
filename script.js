@@ -35,6 +35,7 @@ function renderProjects(filter = 'all') {
       image.alt = project.visualAlt || `${project.title} visual`;
       image.loading = 'lazy';
       image.decoding = 'async';
+      image.fetchPriority = 'low';
       image.width = 960;
       image.height = 540;
       const visualLabel = document.createElement('figcaption');
@@ -173,6 +174,7 @@ data.certificates.forEach((certificate) => {
     image.alt = certificate.description || certificate.title;
     image.loading = 'lazy';
     image.decoding = 'async';
+    image.fetchPriority = 'low';
     preview.append(image);
     openButton.append(preview);
   } else {

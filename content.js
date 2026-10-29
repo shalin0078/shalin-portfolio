@@ -4,7 +4,7 @@ window.PORTFOLIO_CONTENT = {
     {
       number: "01",
       title: "Two-wheeler safety chipset",
-      visual: "assets/project-safety-concept.png",
+      visual: "assets/project-safety-concept.webp",
       visualLabel: "Concept visual · early-stage hardware idea",
       visualAlt: "Concept render of a compact motorcycle safety electronics module beside a motorcycle dashboard",
       credit: "Shalin Rathod · Product concept",
@@ -24,7 +24,7 @@ window.PORTFOLIO_CONTENT = {
     {
       number: "02",
       title: "SMIDI Grow",
-      visual: "assets/project-smidi-dashboard.png",
+      visual: "assets/project-smidi-dashboard.webp",
       visualLabel: "SMIDI Grow · live fleet map screen",
       visualAlt: "SMIDI Grow fleet map dashboard with field-agent roster, route map, dealer and farmer markers, and live fleet activity metrics",
       credit: "Shalin Rathod · Product builder",
@@ -45,7 +45,7 @@ window.PORTFOLIO_CONTENT = {
     {
       number: "03",
       title: "CyberSecure AI SOC Dashboard",
-      visual: "assets/project-cybersecure-preview.png",
+      visual: "assets/project-cybersecure-preview.webp",
       visualLabel: "Illustrative prototype interface",
       visualAlt: "Illustrative security analyst interface for uploaded network-flow review, SHAP explanations, and audit history",
       credit: "Shalin Rathod · Prototype builder",
@@ -65,7 +65,7 @@ window.PORTFOLIO_CONTENT = {
     {
       number: "04",
       title: "CivicSnap",
-      visual: "assets/project-civicsnap-preview.png",
+      visual: "assets/project-civicsnap-preview.webp",
       visualLabel: "Illustrative UI · live site linked",
       visualAlt: "Illustrative CivicSnap report dashboard with photo evidence, a map pin, status steps, and authority review queue",
       credit: "Shalin Rathod · Product builder",
@@ -86,7 +86,7 @@ window.PORTFOLIO_CONTENT = {
     {
       number: "05",
       title: "Katloss Studio",
-      visual: "assets/project-katloss-preview.png",
+      visual: "assets/project-katloss-preview.webp",
       visualLabel: "Illustrative studio UI",
       visualAlt: "Illustrative Katloss Studio image inpainting workspace with a mask and before-and-after preview",
       credit: "Shalin Rathod · Product builder",
@@ -106,7 +106,7 @@ window.PORTFOLIO_CONTENT = {
     {
       number: "06",
       title: "VideoSearch",
-      visual: "assets/project-videosearch-preview.png",
+      visual: "assets/project-videosearch-preview.webp",
       visualLabel: "Illustrative interface · fork-based adaptation",
       visualAlt: "Illustrative local video search interface with transcript matches and a timestamped video timeline",
       credit: "Shalin Rathod · Fork-based adaptation",
@@ -126,7 +126,7 @@ window.PORTFOLIO_CONTENT = {
     {
       number: "07",
       title: "Delta P&L Content Toolkit",
-      visual: "assets/project-delta-toolkit-preview.png",
+      visual: "assets/project-delta-toolkit-preview.webp",
       visualLabel: "Illustrative tool preview",
       visualAlt: "Illustrative trade-note workflow with vertical video, graphic, and caption previews",
       credit: "Shalin Rathod · Tool builder",
@@ -146,7 +146,7 @@ window.PORTFOLIO_CONTENT = {
     {
       number: "08",
       title: "Heart Disease Risk Checker",
-      visual: "assets/project-heart-risk-preview.png",
+      visual: "assets/project-heart-risk-preview.webp",
       visualLabel: "Illustrative educational interface",
       visualAlt: "Illustrative educational machine-learning model comparison and feature explanation dashboard",
       credit: "Shalin Rathod · Learning project",
@@ -166,7 +166,7 @@ window.PORTFOLIO_CONTENT = {
     {
       number: "09",
       title: "Mail Classification Model",
-      visual: "assets/project-mail-classifier-preview.png",
+      visual: "assets/project-mail-classifier-preview.webp",
       visualLabel: "Illustrative local tool interface",
       visualAlt: "Illustrative local email classification workspace with generic messages and category labels",
       credit: "Shalin Rathod · ML baseline",
@@ -199,7 +199,7 @@ window.PORTFOLIO_CONTENT = {
       issuer: "LNM Institute of Information Technology, Jaipur",
       date: "January 2026",
       kind: "Certificate of Participation",
-      image: "assets/plinth-2026-ideathon.png",
+      image: "assets/plinth-2026-ideathon.webp",
       description: "Recognises participation in the Plinth 2026 Ideathon organised by LNMIIT Jaipur. The experience involved framing a problem, developing an idea with a team, and presenting a solution.",
       sourceUrl: "https://www.linkedin.com/in/shalin-rathod-301400305/"
     },
@@ -208,7 +208,7 @@ window.PORTFOLIO_CONTENT = {
       issuer: "AOSSIE · Stability Nexus · Djed Alliance · Ergo Platform · CML-BDA",
       date: "13–14 December 2025",
       kind: "Certificate of Participation",
-      image: "assets/unstoppable-hackathon.png",
+      image: "assets/unstoppable-hackathon.webp",
       credentialId: "c302d7bb-b0c5-4865-832a-de2e953a4e59",
       description: "Recognises participation in The Unstoppable Hackathon, hosted at LNMIIT Jaipur on 13–14 December 2025. The event brought teams together for an intensive build and problem-solving sprint.",
       sourceUrl: "https://www.linkedin.com/in/shalin-rathod-301400305/"
@@ -218,7 +218,7 @@ window.PORTFOLIO_CONTENT = {
       issuer: "Suraksha SPIT Cell · Sardar Patel Institute of Technology",
       date: "22–23 November 2025",
       kind: "Certificate of Participation",
-      image: "assets/redact-2025.png",
+      image: "assets/redact-2025.webp",
       credentialId: "3c413265-1f81-4d2a-a3d9-b9413ecdf996",
       description: "Recognises participation in RΞDACT 2025, a 24-hour hackathon hosted at Sardar Patel Institute of Technology, Mumbai. The event challenged participants to collaborate and build under a focused deadline.",
       sourceUrl: "https://www.linkedin.com/in/shalin-rathod-301400305/"
@@ -228,7 +228,7 @@ window.PORTFOLIO_CONTENT = {
       issuer: "Army Institute of Management, Kolkata · KUBER",
       date: "15–16 December 2025",
       kind: "Certificate of Participation",
-      image: "assets/stock-analysis-guru.png",
+      image: "assets/stock-analysis-guru.webp",
       description: "Recognises participation in the two-day Stock Analysis Guru mock stock challenge, organised by AIM Kolkata’s Finance Club, KUBER. The simulation provided practical experience in analysing market data, building a virtual portfolio, and considering risk.",
       sourceUrl: "https://www.linkedin.com/in/shalin-rathod-301400305/"
     },
@@ -237,7 +237,7 @@ window.PORTFOLIO_CONTENT = {
       issuer: "Mitraroop Foundation",
       date: "",
       kind: "Certificate of Participation · Team shalinrathod02",
-      image: "assets/startup-hackathon-3.png",
+      image: "assets/startup-hackathon-3.webp",
       description: "Recognises participation as team shalinrathod02 in Startup Hackathon 3.0. The eight-hour challenge focused on shaping a startup idea into a practical concept, with prizes worth ₹1,00,000 announced by the organisers.",
       sourceUrl: "https://www.linkedin.com/in/shalin-rathod-301400305/"
     },
@@ -246,7 +246,7 @@ window.PORTFOLIO_CONTENT = {
       issuer: "PIERC · Parul University",
       date: "2–4 & 13 September 2025",
       kind: "Certificate of Achievement",
-      image: "assets/vadodara-hackathon-6.png",
+      image: "assets/vadodara-hackathon-6.webp",
       description: "Recognises selection among the top 45 teams at Vadodara Hackathon 6.0. PIERC at Parul University noted the idea’s innovation potential, feasibility, and problem-solving approach.",
       sourceUrl: "https://www.linkedin.com/in/shalin-rathod-301400305/"
     }
