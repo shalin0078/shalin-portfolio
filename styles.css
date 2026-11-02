@@ -97,8 +97,12 @@
 .project-links{gap:9px}
 .project-links a{display:inline-flex;align-items:center;padding:9px 11px;border:1px solid #b8c5b3;border-radius:4px;background:#f0f3eb;color:#405a3b;line-height:1.3}
 .project-links a:hover{transform:translateY(-1px);background:#33443a;color:#f1f3ed}
-.skill-grid .skill-tags{display:flex;flex-wrap:wrap;gap:7px}
-.skill-grid .skill-tag{display:inline-flex;align-items:center;padding:5px 8px;border:1px solid #607064;border-radius:999px;background:#405147;color:#f1f3ed;font-size:10px;line-height:1.35}
+.skill-grid .skill-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.skill-grid .skill-tag{display:inline-flex;align-items:center;gap:7px;padding:6px 12px;border:1px solid #4d5e52;border-radius:999px;background:#2a362f;color:#f1f3ed;font-size:11.5px;font-weight:500;line-height:1.3;transition:background .18s ease,border-color .18s ease,transform .18s ease}
+.skill-grid .skill-tag:hover{background:#394a3f;border-color:#829d51;transform:translateY(-1px)}
+.skill-grid .skill-tag svg{width:17px;height:17px;flex-shrink:0;color:#b2cb8e}
+.skill-card-wide{grid-column:span 2}
+@media(max-width:760px){.skill-card-wide{grid-column:auto}}
 .project-cyber{border-top:3px solid #829d51!important}
 @media(max-width:760px){.project-highlights{gap:6px}.project-highlights li{font-size:10px}.project-links a{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.project-links a,.project-card h3 a{text-decoration-thickness:1px}}

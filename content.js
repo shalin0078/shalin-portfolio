@@ -49,15 +49,15 @@ window.PORTFOLIO_CONTENT = {
       visualLabel: "Illustrative prototype interface",
       visualAlt: "Illustrative security analyst interface for uploaded network-flow review, SHAP explanations, and audit history",
       credit: "Shalin Rathod · Prototype builder",
-      category: "AI · SECURITY · ANALYTICS",
+      category: "AI · CYBERSECURITY · BLOCKCHAIN",
       filter: "ai",
       status: "Prototype · dataset analysis",
-      summary: "A security-analyst dashboard that reviews network-flow data, surfaces suspicious activity, and explains model signals for investigation.",
-      challenge: "Network-flow records can be difficult to triage quickly. Analysts need risk signals and context to decide what to review first.",
-      approach: "Upload a CSV dataset, score and group likely threat patterns, inspect visual summaries, review SHAP explanations, and view a hash-linked audit history.",
-      focus: "Threat triage, explainability, and analyst decision support",
-      stack: ["Python", "Streamlit", "SHAP", "Network-flow analysis"],
-      note: "This prototype analyzes uploaded datasets and recommends actions. It does not monitor live websites or enforce firewall/IP blocks.",
+      summary: "A security-analyst dashboard that reviews network-flow data, surfaces suspicious activity, explains model signals with SHAP, and anchors tamper-proof audit trails on the blockchain.",
+      challenge: "Network-flow records are complex to triage quickly, while traditional centralized audit logs are vulnerable to unauthorized tampering during incident investigations.",
+      approach: "Upload dataset records, score and group threat patterns, review SHAP model explainability, and record tamper-proof audit hashes via Solidity smart contracts tested on Hardhat to guarantee log integrity.",
+      focus: "Threat triage, SHAP explainability, and blockchain-anchored audit integrity",
+      stack: ["Python", "Streamlit", "Solidity", "Hardhat", "SHAP", "Network-flow analysis", "Blockchain Audit Trail"],
+      note: "This prototype analyzes uploaded datasets and anchors immutable audit logs via smart contracts. It does not monitor live websites or enforce firewall/IP blocks.",
       links: [
         { label: "View GitHub repository", url: "https://github.com/shalin0078/CyberSecur", kind: "repo" }
       ]
@@ -186,6 +186,16 @@ window.PORTFOLIO_CONTENT = {
   ],
   certificates: [
     {
+      title: "The Unstoppable Hackathon",
+      issuer: "AOSSIE · Stability Nexus · Djed Alliance · Ergo Platform · CML-BDA",
+      date: "13–14 December 2025",
+      kind: "Certificate of Participation",
+      image: "assets/unstoppable-hackathon.webp",
+      credentialId: "c302d7bb-b0c5-4865-832a-de2e953a4e59",
+      description: "Recognises participation in The Unstoppable Hackathon, hosted at LNMIIT Jaipur on 13–14 December 2025. The event brought teams together for an intensive build and problem-solving sprint.",
+      sourceUrl: "https://www.linkedin.com/in/shalin-rathod-301400305/"
+    },
+    {
       title: "AICTE · HEI Engagement AI Pre-Summit",
       issuer: "AICTE & Innovation Cell, Parul University",
       date: "6 February 2026",
@@ -201,16 +211,6 @@ window.PORTFOLIO_CONTENT = {
       kind: "Certificate of Participation",
       image: "assets/plinth-2026-ideathon.webp",
       description: "Recognises participation in the Plinth 2026 Ideathon organised by LNMIIT Jaipur. The experience involved framing a problem, developing an idea with a team, and presenting a solution.",
-      sourceUrl: "https://www.linkedin.com/in/shalin-rathod-301400305/"
-    },
-    {
-      title: "The Unstoppable Hackathon",
-      issuer: "AOSSIE · Stability Nexus · Djed Alliance · Ergo Platform · CML-BDA",
-      date: "13–14 December 2025",
-      kind: "Certificate of Participation",
-      image: "assets/unstoppable-hackathon.webp",
-      credentialId: "c302d7bb-b0c5-4865-832a-de2e953a4e59",
-      description: "Recognises participation in The Unstoppable Hackathon, hosted at LNMIIT Jaipur on 13–14 December 2025. The event brought teams together for an intensive build and problem-solving sprint.",
       sourceUrl: "https://www.linkedin.com/in/shalin-rathod-301400305/"
     },
     {
