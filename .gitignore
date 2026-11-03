@@ -1,0 +1,22 @@
+# Environment variables
+.env*
+
+# System and temporary files
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+
+# Deployment archives and backups
+*.tar
+*.zip
+*.gz
+
+# Dependencies & IDEs
+node_modules/
+.vscode/
+.idea/
+
+# Local agent skills cache
+.agents/
+skills-lock.json
